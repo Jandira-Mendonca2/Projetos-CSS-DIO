@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav li{
+    display: inline;
+    align-items: center;
+    text-align: center;
+}
+.menu li i{
+    width: 60px;
+    color: red;
+    font-size: 26px;
+}
+.menu .lateral i{
+   
+    color: #000;
+}
+.pesquisa input{
+    height: 24px;
+    border: 1px solid black;
+    width: 300px;
+}
+#pesquisar{
+    border: 1px solid black;
+    height: 24px;
+}
+.pesquisa #micro{
+    height: 24px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.esquerda iframe{
+    margin-bottom:800px;
+    margin-top: 30px;
+    width: 850px;
+    height: 500px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+.direita{
+    margin-top: -350px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.direita iframe{
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+}
+.video{
+    /* margin-top: 30px; */
+    width: 500px;
+    /* margin-bottom: 20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.video p{
+    margin-left: 5px;
+    word-wrap: break-word;
+}
