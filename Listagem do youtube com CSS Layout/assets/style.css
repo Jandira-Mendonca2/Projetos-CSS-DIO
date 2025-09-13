@@ -1,0 +1,167 @@
+body{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template: "header header header"
+    "aside main main";
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #fff;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: .5fr 1fr .5fr;
+    height: 35px;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+.logo{
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 15px;
+}
+.logo .fa-youtube{
+    color: #FF0033;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.logo .fa-youtube span{
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 2px;
+}
+.pesquisa{
+    height: 35px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 200px;
+}
+.pesquisa #mic input{
+    border-radius: 20px 0 0 20px ;
+    width: 222px;
+    border: none;
+    height: 22px;
+}
+.pesquisa #mic {
+    border: 1px solid black;
+    border-radius: 20px 0 0 20px ;
+}
+.fa-magnifying-glass{
+    width: 37px;
+    border: 1px solid black;
+    font-size: 21.9px;
+    border-radius: 0 20px 20px 0;
+    background-color: #F0F0F0;
+    color: #000;
+}
+.seccao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.bxr {
+    font-size: 30px;
+}
+.op{
+    background-color: bisque;
+    grid-area: aside;
+    width: 215.5px;
+    display: grid;
+    align-items:start;
+    justify-content: safe;
+}
+.op .fa-house{
+    margin-top: 15px;
+}
+.op .fa-solid{
+    font-size: 15px;
+    margin-left: 15px;
+}
+.op .fa-brands{
+    font-size: 15px;
+    margin-left: 15px;
+}
+.op .fa-brands span{
+    font-family: Arial;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 5px;
+}
+.op .fa-regular{
+    font-size: 15px;
+    margin-left: -50px;
+    width: auto;
+}
+.op .fa-circle-play{
+    margin-left: -70px;
+}
+.op .fa-regular span{
+    font-family: Arial;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 5px;
+
+}
+.op .bxr{
+    font-size: 15px;
+    margin-left: 15px;
+}
+.op .bxr span{
+    font-family: Arial;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 5px;
+
+}
+.op .fa-solid span{
+    font-family: Arial;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.op .bi{
+    font-size: 15px;
+    margin-left: 15px;
+}
+.op .bi span{
+    font-family: Arial;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 5px;
+    
+}
+main{
+    background-color: cadetblue;
+    grid-area: main;
+    height: 700px;
+    width: 1320px;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+iframe{
+    width: 300px;
+    height: 250px;
+}
+.cima{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+.meio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+.descricao{
+    margin-top: 0;
+}
+
