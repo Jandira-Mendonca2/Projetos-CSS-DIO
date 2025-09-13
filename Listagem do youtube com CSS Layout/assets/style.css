@@ -69,7 +69,7 @@ header{
     font-size: 30px;
 }
 .op{
-    background-color: bisque;
+    background-color: #fff;
     grid-area: aside;
     width: 215.5px;
     display: grid;
@@ -136,7 +136,7 @@ header{
     
 }
 main{
-    background-color: cadetblue;
+    background-color: #fff;
     grid-area: main;
     height: 700px;
     width: 1320px;
