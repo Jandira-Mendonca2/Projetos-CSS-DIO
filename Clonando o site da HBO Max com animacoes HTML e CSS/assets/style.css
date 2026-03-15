@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+:root{
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+nav{
+    background-color: var(--nav-bg-color);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color);
+    font-family: "Raleway";
+    font-weight: 600;
+}
+.logo img{
+    width: 10vw;
+    padding: 10px;
+}
+.itens li{
+    display: inline;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.itens button{
+    font-weight: 600;
+    padding: 4px 20px;
+    border-radius: 20px;
+    color: var(--text-color);
+    background-color: #B535F6;
+}
+main{
+    display:grid;
+    grid-template-rows: 2fr 2fr;
+}
+.assine{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: var(--tertiary-color);
+}
+.assine ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    /* margin-bottom: 20rem; */
+    /* margin-left: 50px; */
+    
+}
+.assine ul li{
+    list-style: none;
+}
+.assine li img{
+    width: 100%;
+    height:auto;
+}
+.assine .sms{
+    text-align: center;
+    font-family:"Raleway" ;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.assine span{
+    font-weight: bold;
+    font-size: 2rem;
+}
+button{
+    background: linear-gradient(
+      45deg,
+      #9b34ef,
+      #490cb0 ,
+      transparent
+    );
+    transition: .3s;
+}
+.assine h1{
+    text-transform: uppercase;
+    width: 540px;
+}
+.assine p{
+    font-size: 18px;
+}
+.assine div{
+    border-color: #fff;
+    width: 650px;
+    height: 5px;
+    background: var(--divider-bg-color);
+}
+.assine .ass{
+    width: 200px;
+    margin-top: 20px;
+}
+.assine button{
+    font-weight: 600;
+    padding: 10px 50px;
+    border-radius: 40px;
+    color: var(--text-color);
+    background-color: #B535F6;
+    font-size: 24px;
+}
+.assine .obs{
+    width: 250px;
+}
+.planos{
+    background: #020228;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.planos h2{
+    text-align: center;
+    font-size: 1.9rem;
+    font-family: "Quicksand";
+    max-width: 1000px;
+    width: 90%;
+}
+.planos .cards {
+    display: grid;
+    /* align-items: center; */
+    justify-content: space-around;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+   
+}
+.cards .card{
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    background: var(--card-bg-color);
+    font-size: 20px;
+
+}
+.card li::marker{
+    content: "➕";
+    color: white;
+}
+.card button{
+    /* font-weight: 600; */
+    padding: 10px 50px;
+    border-radius: 40px;
+    color: var(--text-color);
+    background-color: #B535F6;
+    font-size: 20px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+  }
+
+/* Sigin */
+.principal{
+    /* height: 100vh; */
+}
+.enter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/background-movies-series.png);
+}
+button{
+    text-transform: uppercase;
+}
+form{
+    width: 600px;
+    border: 1px solid var(--tertiary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    color: var(--text-color);
+
+}
+form input{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+   background-color: var();
+}
+form input::placeholder{
+    color: var(--form-field-placeholder);
+}
+@media sceen and (max-width:720px){
+    .planos .cards {
+        display: grid;
+        /* align-items: center; */
+        justify-content: space-around;
+        grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 100px;
+    
+    }
+    
+}
